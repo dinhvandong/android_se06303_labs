@@ -92,6 +92,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_gravity="center"
             android:paddingHorizontal="60dp"
             android:paddingVertical="12dp"
