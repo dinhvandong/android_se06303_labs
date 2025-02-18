@@ -29,7 +29,7 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="WELCOME"
+        android:text="REGISTER"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -50,6 +50,30 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_centerVertical="true"
+                android:id="@+id/img_fullname"
+                android:src="@drawable/ic_account"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_fullname"
+                android:hint="Fullname"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
                 android:id="@+id/img_email"
                 android:src="@drawable/ic_email"
                 android:layout_width="35dp"
@@ -60,6 +84,30 @@
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/img_email"
                 android:hint="Username/email"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_phone"
+                android:src="@drawable/ic_phonenumber"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_phone"
+                android:hint="Phonenumber"
                 android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -98,7 +146,7 @@
             android:background="@drawable/round_button_login"
             android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:text="Login"
+            android:text="SignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -111,20 +159,21 @@
 
             <TextView
                 android:id="@+id/tv1"
-                android:text="Dont have a Account?"
+                android:text="Already a Member?"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/tv_register"
+                android:id="@+id/tvLogin"
                 android:layout_marginLeft="10dp"
+
                 android:layout_toRightOf="@id/tv1"
                 android:textColor="@color/orange"
-                android:text="Register"
+                android:text="SignIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </RelativeLayout>
     </LinearLayout>
 
-    
+
 
 </RelativeLayout>
